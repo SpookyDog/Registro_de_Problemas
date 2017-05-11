@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Itg-dK-Kwg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dWo-vb-0TL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="gLd-z4-6S3">
             <objects>
-                <viewController id="dWo-vb-0TL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="dWo-vb-0TL" customClass="LogInViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b91-TF-eZI"/>
                         <viewControllerLayoutGuide type="bottom" id="W4n-rP-OeX"/>
@@ -53,16 +53,25 @@
                                 <rect key="frame" x="16" y="402" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log-in"/>
+                                <connections>
+                                    <action selector="btnLogIn:" destination="dWo-vb-0TL" eventType="touchUpInside" id="vIb-FR-wVs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgZ-vx-U5t">
                                 <rect key="frame" x="247" y="402" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Registrar"/>
+                                <connections>
+                                    <segue destination="iYV-Z7-4xE" kind="show" id="7uq-Yb-HNA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GT-zQ-C5N">
                                 <rect key="frame" x="113" y="478" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Olvide Contrasena"/>
+                                <connections>
+                                    <segue destination="bhC-5L-lJm" kind="show" id="gqE-yL-6wt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,6 +153,9 @@
                                 <rect key="frame" x="240" y="437" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Registrar"/>
+                                <connections>
+                                    <segue destination="dWo-vb-0TL" kind="show" id="CMA-OY-iqi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,6 +195,9 @@
                                 <rect key="frame" x="87" y="198" width="201" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Recuperar Contrasena"/>
+                                <connections>
+                                    <segue destination="dWo-vb-0TL" kind="show" id="naO-mX-kUy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,11 +207,10 @@
             </objects>
             <point key="canvasLocation" x="-450.39999999999998" y="817.24137931034488"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -245,16 +259,26 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="jlK-1C-INp">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="eCg-hZ-lRg"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="6gD-Ff-8qf">
+                            <connections>
+                                <segue destination="OO7-jl-2S6" kind="show" identifier="ProblemaDetailViewController" id="1qF-m2-fei"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="eCg-hZ-lRg">
+                            <connections>
+                                <action selector="btnLogOut:" destination="BYZ-38-t0r" id="gQD-Tb-b4q"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Problema Detail View Controller-->
         <scene sceneID="ASA-cX-iLl">
             <objects>
-                <viewController id="OO7-jl-2S6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProblemaDetailViewController" id="OO7-jl-2S6" customClass="ProblemaDetailViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jp8-8h-pja"/>
                         <viewControllerLayoutGuide type="bottom" id="YhQ-c0-epH"/>
@@ -301,7 +325,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Contact Usuario"/>
                                 <connections>
-                                    <segue destination="FHx-wP-tZe" kind="show" id="nTR-WB-1Uv"/>
+                                    <segue destination="FHx-wP-tZe" kind="show" identifier="ChatViewController" id="nTR-WB-1Uv"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iDI-q0-B2e">
@@ -320,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="1844" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="mVT-Ni-O1D">
             <objects>
-                <viewController id="FHx-wP-tZe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="FHx-wP-tZe" customClass="ChatViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gxk-Gd-4Si"/>
                         <viewControllerLayoutGuide type="bottom" id="8TW-6m-qIb"/>
@@ -348,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="2512.8000000000002" y="141.67916041979012"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main View Controller-->
         <scene sceneID="R2a-vW-b9L">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Itg-dK-Kwg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainViewController" automaticallyAdjustsScrollViewInsets="NO" id="Itg-dK-Kwg" customClass="MainViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nH1-WE-qwC">
@@ -368,4 +392,7 @@
             <point key="canvasLocation" x="154" y="139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="naO-mX-kUy"/>
+    </inferredMetricsTieBreakers>
 </document>

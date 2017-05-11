@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200392B21EC4E95000444783 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B11EC4E95000444783 /* LogInViewController.swift */; };
+		200392B41EC4E9CC00444783 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B31EC4E9CC00444783 /* MainViewController.swift */; };
+		200392B61EC4E9FB00444783 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B51EC4E9FB00444783 /* HomeViewController.swift */; };
+		200392B81EC4EB0900444783 /* ProblemaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B71EC4EB0900444783 /* ProblemaDetailViewController.swift */; };
+		200392BA1EC4EB3900444783 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B91EC4EB3900444783 /* ChatViewController.swift */; };
 		209468751EC3CB2400DCDCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209468741EC3CB2400DCDCBD /* AppDelegate.swift */; };
 		209468771EC3CB2400DCDCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209468761EC3CB2400DCDCBD /* ViewController.swift */; };
 		2094687A1EC3CB2400DCDCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209468781EC3CB2400DCDCBD /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200392B11EC4E95000444783 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		200392B31EC4E9CC00444783 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		200392B51EC4E9FB00444783 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		200392B71EC4EB0900444783 /* ProblemaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaDetailViewController.swift; sourceTree = "<group>"; };
+		200392B91EC4EB3900444783 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		209468711EC3CB2400DCDCBD /* Registro_De_Problemas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registro_De_Problemas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209468741EC3CB2400DCDCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209468761EC3CB2400DCDCBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200392AF1EC4E91100444783 /* Iphone */ = {
+			isa = PBXGroup;
+			children = (
+				200392B01EC4E92400444783 /* Classes */,
+			);
+			name = Iphone;
+			sourceTree = "<group>";
+		};
+		200392B01EC4E92400444783 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				200392B11EC4E95000444783 /* LogInViewController.swift */,
+				200392B31EC4E9CC00444783 /* MainViewController.swift */,
+				200392B51EC4E9FB00444783 /* HomeViewController.swift */,
+				200392B71EC4EB0900444783 /* ProblemaDetailViewController.swift */,
+				200392B91EC4EB3900444783 /* ChatViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		209468681EC3CB2400DCDCBD = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +86,7 @@
 		209468731EC3CB2400DCDCBD /* Registro_De_Problemas */ = {
 			isa = PBXGroup;
 			children = (
+				200392AF1EC4E91100444783 /* Iphone */,
 				209468741EC3CB2400DCDCBD /* AppDelegate.swift */,
 				209468761EC3CB2400DCDCBD /* ViewController.swift */,
 				209468781EC3CB2400DCDCBD /* Main.storyboard */,
@@ -139,9 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200392B21EC4E95000444783 /* LogInViewController.swift in Sources */,
 				2094687D1EC3CB2400DCDCBD /* Registro_De_Problemas.xcdatamodeld in Sources */,
+				200392BA1EC4EB3900444783 /* ChatViewController.swift in Sources */,
 				209468771EC3CB2400DCDCBD /* ViewController.swift in Sources */,
 				209468751EC3CB2400DCDCBD /* AppDelegate.swift in Sources */,
+				200392B41EC4E9CC00444783 /* MainViewController.swift in Sources */,
+				200392B61EC4E9FB00444783 /* HomeViewController.swift in Sources */,
+				200392B81EC4EB0900444783 /* ProblemaDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +343,7 @@
 				209468881EC3CB2400DCDCBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
