@@ -1,14 +1,26 @@
 //
-//  LogInViewController.swift
+//  RDPRegistrarViewController.swift
 //  Registro_De_Problemas
 //
-//  Created by Daniel V on 5/11/17.
+//  Created by Daniel V on 6/21/17.
 //  Copyright © 2017 Daniel V. All rights reserved.
 //
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class RDPRegistrarViewController: UIViewController {
+    
+    @IBOutlet weak var txtUsuario: UITextField!
+    @IBOutlet weak var txtContrasena: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtTelefono: UITextField!
+    @IBOutlet weak var constraintBottomScroll: NSLayoutConstraint!
+    
+    @IBAction func clickBtnUsuario(_ sender: Any) {
+    }
+    
+    @IBAction func clickBtnDeveloper(_ sender: Any) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +33,6 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnLogIn(_ sender: Any) {
-        let mainViewController = storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        
-        present(mainViewController, animated: true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation

@@ -1,14 +1,14 @@
 //
-//  ProblemaDetailViewController.swift
+//  RDPOlvidePasswordViewController.swift
 //  Registro_De_Problemas
 //
-//  Created by Daniel V on 5/11/17.
+//  Created by Daniel V on 6/21/17.
 //  Copyright © 2017 Daniel V. All rights reserved.
 //
 
 import UIKit
 
-class ProblemaDetailViewController: UIViewController {
+class RDPOlvidePasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

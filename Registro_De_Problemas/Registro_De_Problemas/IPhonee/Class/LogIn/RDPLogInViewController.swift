@@ -1,14 +1,31 @@
 //
-//  HomeViewController.swift
+//  RDPLogInViewController.swift
 //  Registro_De_Problemas
 //
-//  Created by Daniel V on 5/11/17.
+//  Created by Daniel V on 6/21/17.
 //  Copyright © 2017 Daniel V. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class RDPLogInViewController: UIViewController {
+    
+    @IBOutlet weak var txtUsuario: UITextField!
+    @IBOutlet weak var txtContrasena: UITextField!
+    @IBOutlet weak var constraintBottomScroll: NSLayoutConstraint!
+    
+    
+    @IBAction func clickBtnIngresar(_ sender: Any) {
+    }
+    
+    @IBAction func clickBtnRegistrar(_ sender: Any) {
+    }
+    
+    @IBAction func clickBtnOlvide(_ sender: Any) {
+    }
+    
+    @IBAction func tapCerrarTeclado(_ sender: Any) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +39,6 @@ class HomeViewController: UIViewController {
     }
     
 
-    @IBAction func btnLogOut(_ sender: Any) {
-        presentingViewController?.dismiss(animated: true, completion: nil)
-    }
     /*
     // MARK: - Navigation
 

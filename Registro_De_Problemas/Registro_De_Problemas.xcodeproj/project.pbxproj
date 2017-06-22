@@ -7,25 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200392B21EC4E95000444783 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B11EC4E95000444783 /* LogInViewController.swift */; };
-		200392B41EC4E9CC00444783 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B31EC4E9CC00444783 /* MainViewController.swift */; };
-		200392B61EC4E9FB00444783 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B51EC4E9FB00444783 /* HomeViewController.swift */; };
-		200392B81EC4EB0900444783 /* ProblemaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B71EC4EB0900444783 /* ProblemaDetailViewController.swift */; };
-		200392BA1EC4EB3900444783 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200392B91EC4EB3900444783 /* ChatViewController.swift */; };
 		209468751EC3CB2400DCDCBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209468741EC3CB2400DCDCBD /* AppDelegate.swift */; };
 		209468771EC3CB2400DCDCBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209468761EC3CB2400DCDCBD /* ViewController.swift */; };
 		2094687A1EC3CB2400DCDCBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209468781EC3CB2400DCDCBD /* Main.storyboard */; };
 		2094687D1EC3CB2400DCDCBD /* Registro_De_Problemas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2094687B1EC3CB2400DCDCBD /* Registro_De_Problemas.xcdatamodeld */; };
 		2094687F1EC3CB2400DCDCBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2094687E1EC3CB2400DCDCBD /* Assets.xcassets */; };
 		209468821EC3CB2400DCDCBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209468801EC3CB2400DCDCBD /* LaunchScreen.storyboard */; };
+		20EC004B1EFB35F5001A241F /* DIClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00401EFB35F5001A241F /* DIClosures.swift */; };
+		20EC004C1EFB35F5001A241F /* CDMColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00421EFB35F5001A241F /* CDMColorManager.swift */; };
+		20EC004D1EFB35F5001A241F /* CDMDateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00431EFB35F5001A241F /* CDMDateManager.swift */; };
+		20EC004E1EFB35F5001A241F /* CDMImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00441EFB35F5001A241F /* CDMImageDownloaded.swift */; };
+		20EC004F1EFB35F5001A241F /* CDMKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00451EFB35F5001A241F /* CDMKeyChain.swift */; };
+		20EC00501EFB35F5001A241F /* CDMLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00461EFB35F5001A241F /* CDMLoadingView.swift */; };
+		20EC00511EFB35F5001A241F /* CDMLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00471EFB35F5001A241F /* CDMLocationManager.swift */; };
+		20EC00521EFB35F5001A241F /* CDMUserAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00481EFB35F5001A241F /* CDMUserAlerts.swift */; };
+		20EC00531EFB35F5001A241F /* CDMWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00491EFB35F5001A241F /* CDMWebResponse.swift */; };
+		20EC00541EFB35F5001A241F /* CDMWebSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC004A1EFB35F5001A241F /* CDMWebSender.swift */; };
+		20EC00561EFB36AF001A241F /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EC00551EFB36AF001A241F /* LogIn.storyboard */; };
+		20EC00591EFB3759001A241F /* RDPLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00581EFB3759001A241F /* RDPLogInViewController.swift */; };
+		20EC005B1EFB377F001A241F /* RDPUsuarioBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC005A1EFB377F001A241F /* RDPUsuarioBE.swift */; };
+		20EC005D1EFB46C6001A241F /* RDPUsuarioDALC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC005C1EFB46C6001A241F /* RDPUsuarioDALC.swift */; };
+		20EC005F1EFB4D2A001A241F /* RDPRegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC005E1EFB4D2A001A241F /* RDPRegistrarViewController.swift */; };
+		20EC00611EFB4D53001A241F /* RDPOlvidePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00601EFB4D53001A241F /* RDPOlvidePasswordViewController.swift */; };
+		20EC00631EFB5274001A241F /* RDPUsuarioBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00621EFB5274001A241F /* RDPUsuarioBC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		200392B11EC4E95000444783 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		200392B31EC4E9CC00444783 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		200392B51EC4E9FB00444783 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		200392B71EC4EB0900444783 /* ProblemaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemaDetailViewController.swift; sourceTree = "<group>"; };
-		200392B91EC4EB3900444783 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		209468711EC3CB2400DCDCBD /* Registro_De_Problemas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Registro_De_Problemas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209468741EC3CB2400DCDCBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209468761EC3CB2400DCDCBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +41,23 @@
 		2094687E1EC3CB2400DCDCBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209468811EC3CB2400DCDCBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209468831EC3CB2400DCDCBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EC00401EFB35F5001A241F /* DIClosures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIClosures.swift; sourceTree = "<group>"; };
+		20EC00421EFB35F5001A241F /* CDMColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMColorManager.swift; sourceTree = "<group>"; };
+		20EC00431EFB35F5001A241F /* CDMDateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMDateManager.swift; sourceTree = "<group>"; };
+		20EC00441EFB35F5001A241F /* CDMImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMImageDownloaded.swift; sourceTree = "<group>"; };
+		20EC00451EFB35F5001A241F /* CDMKeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMKeyChain.swift; sourceTree = "<group>"; };
+		20EC00461EFB35F5001A241F /* CDMLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMLoadingView.swift; sourceTree = "<group>"; };
+		20EC00471EFB35F5001A241F /* CDMLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMLocationManager.swift; sourceTree = "<group>"; };
+		20EC00481EFB35F5001A241F /* CDMUserAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMUserAlerts.swift; sourceTree = "<group>"; };
+		20EC00491EFB35F5001A241F /* CDMWebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebResponse.swift; sourceTree = "<group>"; };
+		20EC004A1EFB35F5001A241F /* CDMWebSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebSender.swift; sourceTree = "<group>"; };
+		20EC00551EFB36AF001A241F /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		20EC00581EFB3759001A241F /* RDPLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPLogInViewController.swift; sourceTree = "<group>"; };
+		20EC005A1EFB377F001A241F /* RDPUsuarioBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioBE.swift; sourceTree = "<group>"; };
+		20EC005C1EFB46C6001A241F /* RDPUsuarioDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioDALC.swift; sourceTree = "<group>"; };
+		20EC005E1EFB4D2A001A241F /* RDPRegistrarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPRegistrarViewController.swift; sourceTree = "<group>"; };
+		20EC00601EFB4D53001A241F /* RDPOlvidePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPOlvidePasswordViewController.swift; sourceTree = "<group>"; };
+		20EC00621EFB5274001A241F /* RDPUsuarioBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioBC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,26 +71,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		200392AF1EC4E91100444783 /* Iphone */ = {
-			isa = PBXGroup;
-			children = (
-				200392B01EC4E92400444783 /* Classes */,
-			);
-			name = Iphone;
-			sourceTree = "<group>";
-		};
-		200392B01EC4E92400444783 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				200392B11EC4E95000444783 /* LogInViewController.swift */,
-				200392B31EC4E9CC00444783 /* MainViewController.swift */,
-				200392B51EC4E9FB00444783 /* HomeViewController.swift */,
-				200392B71EC4EB0900444783 /* ProblemaDetailViewController.swift */,
-				200392B91EC4EB3900444783 /* ChatViewController.swift */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		209468681EC3CB2400DCDCBD = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +90,11 @@
 		209468731EC3CB2400DCDCBD /* Registro_De_Problemas */ = {
 			isa = PBXGroup;
 			children = (
-				200392AF1EC4E91100444783 /* Iphone */,
+				20EC003E1EFB35F5001A241F /* ClasesGenerales */,
+				20EC003D1EFB359F001A241F /* DALC */,
+				20EC003C1EFB3594001A241F /* BC */,
+				20EC003B1EFB3586001A241F /* BE */,
+				20EC00381EFB34F5001A241F /* IPhonee */,
 				209468741EC3CB2400DCDCBD /* AppDelegate.swift */,
 				209468761EC3CB2400DCDCBD /* ViewController.swift */,
 				209468781EC3CB2400DCDCBD /* Main.storyboard */,
@@ -96,6 +104,98 @@
 				2094687B1EC3CB2400DCDCBD /* Registro_De_Problemas.xcdatamodeld */,
 			);
 			path = Registro_De_Problemas;
+			sourceTree = "<group>";
+		};
+		20EC00381EFB34F5001A241F /* IPhonee */ = {
+			isa = PBXGroup;
+			children = (
+				20EC003A1EFB3524001A241F /* Vistas */,
+				20EC00391EFB3506001A241F /* Class */,
+			);
+			path = IPhonee;
+			sourceTree = "<group>";
+		};
+		20EC00391EFB3506001A241F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00571EFB373F001A241F /* LogIn */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		20EC003A1EFB3524001A241F /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00551EFB36AF001A241F /* LogIn.storyboard */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
+		20EC003B1EFB3586001A241F /* BE */ = {
+			isa = PBXGroup;
+			children = (
+				20EC005A1EFB377F001A241F /* RDPUsuarioBE.swift */,
+			);
+			path = BE;
+			sourceTree = "<group>";
+		};
+		20EC003C1EFB3594001A241F /* BC */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00621EFB5274001A241F /* RDPUsuarioBC.swift */,
+			);
+			path = BC;
+			sourceTree = "<group>";
+		};
+		20EC003D1EFB359F001A241F /* DALC */ = {
+			isa = PBXGroup;
+			children = (
+				20EC005C1EFB46C6001A241F /* RDPUsuarioDALC.swift */,
+			);
+			path = DALC;
+			sourceTree = "<group>";
+		};
+		20EC003E1EFB35F5001A241F /* ClasesGenerales */ = {
+			isa = PBXGroup;
+			children = (
+				20EC003F1EFB35F5001A241F /* Closures */,
+				20EC00411EFB35F5001A241F /* CoreDataMedia */,
+			);
+			path = ClasesGenerales;
+			sourceTree = "<group>";
+		};
+		20EC003F1EFB35F5001A241F /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00401EFB35F5001A241F /* DIClosures.swift */,
+			);
+			path = Closures;
+			sourceTree = "<group>";
+		};
+		20EC00411EFB35F5001A241F /* CoreDataMedia */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00421EFB35F5001A241F /* CDMColorManager.swift */,
+				20EC00431EFB35F5001A241F /* CDMDateManager.swift */,
+				20EC00441EFB35F5001A241F /* CDMImageDownloaded.swift */,
+				20EC00451EFB35F5001A241F /* CDMKeyChain.swift */,
+				20EC00461EFB35F5001A241F /* CDMLoadingView.swift */,
+				20EC00471EFB35F5001A241F /* CDMLocationManager.swift */,
+				20EC00481EFB35F5001A241F /* CDMUserAlerts.swift */,
+				20EC00491EFB35F5001A241F /* CDMWebResponse.swift */,
+				20EC004A1EFB35F5001A241F /* CDMWebSender.swift */,
+			);
+			path = CoreDataMedia;
+			sourceTree = "<group>";
+		};
+		20EC00571EFB373F001A241F /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00581EFB3759001A241F /* RDPLogInViewController.swift */,
+				20EC005E1EFB4D2A001A241F /* RDPRegistrarViewController.swift */,
+				20EC00601EFB4D53001A241F /* RDPOlvidePasswordViewController.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20EC00561EFB36AF001A241F /* LogIn.storyboard in Resources */,
 				209468821EC3CB2400DCDCBD /* LaunchScreen.storyboard in Resources */,
 				2094687F1EC3CB2400DCDCBD /* Assets.xcassets in Resources */,
 				2094687A1EC3CB2400DCDCBD /* Main.storyboard in Resources */,
@@ -170,14 +271,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				200392B21EC4E95000444783 /* LogInViewController.swift in Sources */,
+				20EC004C1EFB35F5001A241F /* CDMColorManager.swift in Sources */,
+				20EC005D1EFB46C6001A241F /* RDPUsuarioDALC.swift in Sources */,
+				20EC00631EFB5274001A241F /* RDPUsuarioBC.swift in Sources */,
 				2094687D1EC3CB2400DCDCBD /* Registro_De_Problemas.xcdatamodeld in Sources */,
-				200392BA1EC4EB3900444783 /* ChatViewController.swift in Sources */,
+				20EC004B1EFB35F5001A241F /* DIClosures.swift in Sources */,
+				20EC00511EFB35F5001A241F /* CDMLocationManager.swift in Sources */,
 				209468771EC3CB2400DCDCBD /* ViewController.swift in Sources */,
+				20EC00531EFB35F5001A241F /* CDMWebResponse.swift in Sources */,
+				20EC005B1EFB377F001A241F /* RDPUsuarioBE.swift in Sources */,
+				20EC00501EFB35F5001A241F /* CDMLoadingView.swift in Sources */,
 				209468751EC3CB2400DCDCBD /* AppDelegate.swift in Sources */,
-				200392B41EC4E9CC00444783 /* MainViewController.swift in Sources */,
-				200392B61EC4E9FB00444783 /* HomeViewController.swift in Sources */,
-				200392B81EC4EB0900444783 /* ProblemaDetailViewController.swift in Sources */,
+				20EC00541EFB35F5001A241F /* CDMWebSender.swift in Sources */,
+				20EC00591EFB3759001A241F /* RDPLogInViewController.swift in Sources */,
+				20EC00521EFB35F5001A241F /* CDMUserAlerts.swift in Sources */,
+				20EC005F1EFB4D2A001A241F /* RDPRegistrarViewController.swift in Sources */,
+				20EC004D1EFB35F5001A241F /* CDMDateManager.swift in Sources */,
+				20EC004F1EFB35F5001A241F /* CDMKeyChain.swift in Sources */,
+				20EC004E1EFB35F5001A241F /* CDMImageDownloaded.swift in Sources */,
+				20EC00611EFB4D53001A241F /* RDPOlvidePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
