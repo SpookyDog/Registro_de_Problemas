@@ -30,6 +30,12 @@
 		20EC005F1EFB4D2A001A241F /* RDPRegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC005E1EFB4D2A001A241F /* RDPRegistrarViewController.swift */; };
 		20EC00611EFB4D53001A241F /* RDPOlvidePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00601EFB4D53001A241F /* RDPOlvidePasswordViewController.swift */; };
 		20EC00631EFB5274001A241F /* RDPUsuarioBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC00621EFB5274001A241F /* RDPUsuarioBC.swift */; };
+		83F6DFDE1EFCB19B0084C1A0 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F6DFDD1EFCB19B0084C1A0 /* Root.storyboard */; };
+		83F6DFE11EFCB1CB0084C1A0 /* RDPRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6DFE01EFCB1CB0084C1A0 /* RDPRootViewController.swift */; };
+		83F6DFE51EFCBCFF0084C1A0 /* Desarrollador.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F6DFE41EFCBCFF0084C1A0 /* Desarrollador.storyboard */; };
+		83F6DFE71EFCBD070084C1A0 /* Usuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F6DFE61EFCBD070084C1A0 /* Usuario.storyboard */; };
+		83F6DFEB1EFCBD460084C1A0 /* RDPDesarrolladorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6DFEA1EFCBD460084C1A0 /* RDPDesarrolladorViewController.swift */; };
+		83F6DFED1EFCBDBF0084C1A0 /* RDPUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6DFEC1EFCBDBF0084C1A0 /* RDPUsuarioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,13 +57,19 @@
 		20EC00481EFB35F5001A241F /* CDMUserAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMUserAlerts.swift; sourceTree = "<group>"; };
 		20EC00491EFB35F5001A241F /* CDMWebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebResponse.swift; sourceTree = "<group>"; };
 		20EC004A1EFB35F5001A241F /* CDMWebSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebSender.swift; sourceTree = "<group>"; };
-		20EC00551EFB36AF001A241F /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		20EC00551EFB36AF001A241F /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LogIn.storyboard; path = ../LogIn.storyboard; sourceTree = "<group>"; };
 		20EC00581EFB3759001A241F /* RDPLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPLogInViewController.swift; sourceTree = "<group>"; };
 		20EC005A1EFB377F001A241F /* RDPUsuarioBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioBE.swift; sourceTree = "<group>"; };
 		20EC005C1EFB46C6001A241F /* RDPUsuarioDALC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioDALC.swift; sourceTree = "<group>"; };
 		20EC005E1EFB4D2A001A241F /* RDPRegistrarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPRegistrarViewController.swift; sourceTree = "<group>"; };
 		20EC00601EFB4D53001A241F /* RDPOlvidePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPOlvidePasswordViewController.swift; sourceTree = "<group>"; };
 		20EC00621EFB5274001A241F /* RDPUsuarioBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioBC.swift; sourceTree = "<group>"; };
+		83F6DFDD1EFCB19B0084C1A0 /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		83F6DFE01EFCB1CB0084C1A0 /* RDPRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPRootViewController.swift; sourceTree = "<group>"; };
+		83F6DFE41EFCBCFF0084C1A0 /* Desarrollador.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Desarrollador.storyboard; sourceTree = "<group>"; };
+		83F6DFE61EFCBD070084C1A0 /* Usuario.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Usuario.storyboard; sourceTree = "<group>"; };
+		83F6DFEA1EFCBD460084C1A0 /* RDPDesarrolladorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPDesarrolladorViewController.swift; sourceTree = "<group>"; };
+		83F6DFEC1EFCBDBF0084C1A0 /* RDPUsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDPUsuarioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,9 @@
 		20EC00391EFB3506001A241F /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				83F6DFE91EFCBD2B0084C1A0 /* UsuarioClass */,
+				83F6DFE81EFCBD1C0084C1A0 /* DesarrolladorClass */,
+				83F6DFDF1EFCB1B10084C1A0 /* Root */,
 				20EC00571EFB373F001A241F /* LogIn */,
 			);
 			path = Class;
@@ -126,7 +141,10 @@
 		20EC003A1EFB3524001A241F /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
-				20EC00551EFB36AF001A241F /* LogIn.storyboard */,
+				83F6DFE31EFCBC220084C1A0 /* DesarrolladorVistas */,
+				83F6DFE21EFCBC020084C1A0 /* UsuarioVistas */,
+				83F6DFDC1EFCB18D0084C1A0 /* Root */,
+				83F6DFDB1EFCB1760084C1A0 /* Login */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -198,6 +216,62 @@
 			path = LogIn;
 			sourceTree = "<group>";
 		};
+		83F6DFDB1EFCB1760084C1A0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				20EC00551EFB36AF001A241F /* LogIn.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		83F6DFDC1EFCB18D0084C1A0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DFDD1EFCB19B0084C1A0 /* Root.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		83F6DFDF1EFCB1B10084C1A0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DFE01EFCB1CB0084C1A0 /* RDPRootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		83F6DFE21EFCBC020084C1A0 /* UsuarioVistas */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DFE61EFCBD070084C1A0 /* Usuario.storyboard */,
+			);
+			path = UsuarioVistas;
+			sourceTree = "<group>";
+		};
+		83F6DFE31EFCBC220084C1A0 /* DesarrolladorVistas */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DFE41EFCBCFF0084C1A0 /* Desarrollador.storyboard */,
+			);
+			path = DesarrolladorVistas;
+			sourceTree = "<group>";
+		};
+		83F6DFE81EFCBD1C0084C1A0 /* DesarrolladorClass */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DFEA1EFCBD460084C1A0 /* RDPDesarrolladorViewController.swift */,
+			);
+			path = DesarrolladorClass;
+			sourceTree = "<group>";
+		};
+		83F6DFE91EFCBD2B0084C1A0 /* UsuarioClass */ = {
+			isa = PBXGroup;
+			children = (
+				83F6DFEC1EFCBDBF0084C1A0 /* RDPUsuarioViewController.swift */,
+			);
+			path = UsuarioClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,8 +331,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F6DFDE1EFCB19B0084C1A0 /* Root.storyboard in Resources */,
+				83F6DFE51EFCBCFF0084C1A0 /* Desarrollador.storyboard in Resources */,
 				20EC00561EFB36AF001A241F /* LogIn.storyboard in Resources */,
 				209468821EC3CB2400DCDCBD /* LaunchScreen.storyboard in Resources */,
+				83F6DFE71EFCBD070084C1A0 /* Usuario.storyboard in Resources */,
 				2094687F1EC3CB2400DCDCBD /* Assets.xcassets in Resources */,
 				2094687A1EC3CB2400DCDCBD /* Main.storyboard in Resources */,
 			);
@@ -274,6 +351,7 @@
 				20EC004C1EFB35F5001A241F /* CDMColorManager.swift in Sources */,
 				20EC005D1EFB46C6001A241F /* RDPUsuarioDALC.swift in Sources */,
 				20EC00631EFB5274001A241F /* RDPUsuarioBC.swift in Sources */,
+				83F6DFE11EFCB1CB0084C1A0 /* RDPRootViewController.swift in Sources */,
 				2094687D1EC3CB2400DCDCBD /* Registro_De_Problemas.xcdatamodeld in Sources */,
 				20EC004B1EFB35F5001A241F /* DIClosures.swift in Sources */,
 				20EC00511EFB35F5001A241F /* CDMLocationManager.swift in Sources */,
@@ -286,8 +364,10 @@
 				20EC00591EFB3759001A241F /* RDPLogInViewController.swift in Sources */,
 				20EC00521EFB35F5001A241F /* CDMUserAlerts.swift in Sources */,
 				20EC005F1EFB4D2A001A241F /* RDPRegistrarViewController.swift in Sources */,
+				83F6DFED1EFCBDBF0084C1A0 /* RDPUsuarioViewController.swift in Sources */,
 				20EC004D1EFB35F5001A241F /* CDMDateManager.swift in Sources */,
 				20EC004F1EFB35F5001A241F /* CDMKeyChain.swift in Sources */,
+				83F6DFEB1EFCBD460084C1A0 /* RDPDesarrolladorViewController.swift in Sources */,
 				20EC004E1EFB35F5001A241F /* CDMImageDownloaded.swift in Sources */,
 				20EC00611EFB4D53001A241F /* RDPOlvidePasswordViewController.swift in Sources */,
 			);

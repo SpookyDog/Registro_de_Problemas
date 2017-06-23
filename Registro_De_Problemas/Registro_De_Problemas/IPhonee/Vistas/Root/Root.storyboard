@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TTP-FH-lrW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="tOj-Gn-cT3">
+            <objects>
+                <viewController storyboardIdentifier="RDPRootViewController" id="TTP-FH-lrW" customClass="RDPRootViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Jm-oW-wfB"/>
+                        <viewControllerLayoutGuide type="bottom" id="jp8-H3-TIy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agb-hJ-wuo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKP-KY-5QI">
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qvh-EF-zhp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-r9-HtD">
+                                <rect key="frame" x="16" y="609" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ply-Bk-IcR"/>
+                                </constraints>
+                                <state key="normal" title="Cerrar Sesion"/>
+                                <connections>
+                                    <action selector="clickBtnCerrar:" destination="TTP-FH-lrW" eventType="touchUpInside" id="6pd-kH-BHT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FKP-KY-5QI" firstAttribute="top" secondItem="5Jm-oW-wfB" secondAttribute="bottom" constant="8" id="Ua0-2O-nMT"/>
+                            <constraint firstItem="FKP-KY-5QI" firstAttribute="leading" secondItem="agb-hJ-wuo" secondAttribute="leadingMargin" id="k02-RC-f5u"/>
+                            <constraint firstItem="FKP-KY-5QI" firstAttribute="trailing" secondItem="agb-hJ-wuo" secondAttribute="trailingMargin" id="pzr-J7-aEU"/>
+                            <constraint firstItem="jp8-H3-TIy" firstAttribute="top" secondItem="f2y-r9-HtD" secondAttribute="bottom" constant="28" id="wyX-dN-9SH"/>
+                            <constraint firstItem="f2y-r9-HtD" firstAttribute="leading" secondItem="agb-hJ-wuo" secondAttribute="leadingMargin" id="xPR-z4-JQP"/>
+                            <constraint firstItem="f2y-r9-HtD" firstAttribute="trailing" secondItem="agb-hJ-wuo" secondAttribute="trailingMargin" id="zNc-sl-a7f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTestEmail" destination="FKP-KY-5QI" id="3ZU-gg-OUt"/>
+                        <segue destination="uA2-bD-jEd" kind="presentation" identifier="RDPLogInNavViewController" id="PLx-Cx-x0e"/>
+                        <segue destination="Vn4-nM-UGf" kind="presentation" identifier="RDPUsuarioNavViewController" id="qAJ-KY-KaP"/>
+                        <segue destination="afF-39-mhe" kind="presentation" identifier="RDPDesarrolladorNavViewController" id="b5B-bT-IVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wy-Ve-hEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="98.50074962518741"/>
+        </scene>
+        <!--RDPUsuarioNavViewController-->
+        <scene sceneID="akh-8d-ywD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Usuario" referencedIdentifier="RDPUsuarioNavViewController" id="Vn4-nM-UGf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmw-g4-qfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="-10"/>
+        </scene>
+        <!--RDPLogInNavViewController-->
+        <scene sceneID="TlM-p5-vMi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LogIn" referencedIdentifier="RDPLogInNavViewController" id="uA2-bD-jEd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMc-1e-WQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="115"/>
+        </scene>
+        <!--RDPDesarrolladorNavViewController-->
+        <scene sceneID="Cqh-Nk-f9Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Desarrollador" referencedIdentifier="RDPDesarrolladorNavViewController" id="afF-39-mhe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SR7-8W-WYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="228"/>
+        </scene>
+    </scenes>
+</document>

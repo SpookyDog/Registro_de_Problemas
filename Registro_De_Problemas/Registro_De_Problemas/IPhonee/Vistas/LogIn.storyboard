@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Caq-8R-1Y3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Caq-8R-1Y3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log In View Controller-->
+        <!--Login-->
         <scene sceneID="axr-gO-bgb">
             <objects>
                 <viewController storyboardIdentifier="RDPLogInViewController" id="KEo-8Z-tvs" customClass="RDPLogInViewController" customModule="Registro_De_Problemas" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="height" constant="30" id="gzW-Jp-Hbc"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tu-OU-mcb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tu-OU-mcb">
                                         <rect key="frame" x="16" y="47" width="288" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Zrq-hf-wkj"/>
@@ -92,7 +92,7 @@
                                         </state>
                                         <connections>
                                             <action selector="clickBtnRegistrar:" destination="KEo-8Z-tvs" eventType="touchUpInside" id="oQZ-i6-hsb"/>
-                                            <segue destination="Fea-ay-fRG" kind="show" id="lMw-1r-29x"/>
+                                            <segue destination="Fea-ay-fRG" kind="show" identifier="RDPRegistrarViewController" id="lMw-1r-29x"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhh-S9-dud">
@@ -106,7 +106,7 @@
                                         </state>
                                         <connections>
                                             <action selector="clickBtnOlvide:" destination="KEo-8Z-tvs" eventType="touchUpInside" id="vvL-ep-FVJ"/>
-                                            <segue destination="vxP-sN-th6" kind="show" id="0Kh-MX-PN6"/>
+                                            <segue destination="vxP-sN-th6" kind="show" identifier="RDPOlvidePasswordViewController" id="0Kh-MX-PN6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -152,11 +152,11 @@
                             <outletCollection property="gestureRecognizers" destination="Ds6-BD-ljx" appends="YES" id="ura-Km-r3G"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="Xzq-9K-jJV"/>
+                    <navigationItem key="navigationItem" title="Login" id="Xzq-9K-jJV"/>
                     <connections>
                         <outlet property="constraintBottomScroll" destination="NeW-Ds-Mx5" id="oIk-1l-xOy"/>
                         <outlet property="txtContrasena" destination="5qk-cf-p1f" id="J4k-Or-KrV"/>
-                        <outlet property="txtUsuario" destination="Gta-DZ-ZUD" id="lSN-Te-03z"/>
+                        <outlet property="txtEmail" destination="Gta-DZ-ZUD" id="Lnq-Og-CwV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HNy-VC-Rt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -190,7 +190,7 @@
                                             <constraint firstAttribute="height" constant="30" id="aZJ-1G-21F"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seC-AS-aOg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seC-AS-aOg">
                                         <rect key="frame" x="8" y="38" width="304" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="d43-32-SZy"/>
@@ -289,6 +289,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="bPy-2d-0Th" secondAttribute="trailing" constant="8" id="0i1-cb-DLE"/>
                                     <constraint firstItem="bPy-2d-0Th" firstAttribute="top" secondItem="8Nh-O8-Om0" secondAttribute="bottom" constant="20" id="0tS-Dx-5eD"/>
@@ -326,6 +327,9 @@
                                     <constraint firstItem="bPy-2d-0Th" firstAttribute="leading" secondItem="qcZ-v0-wLH" secondAttribute="leading" constant="8" id="sb0-pO-VZv"/>
                                     <constraint firstItem="yB5-X7-R6V" firstAttribute="top" secondItem="qcZ-v0-wLH" secondAttribute="top" id="ygh-e2-CJ7"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EQd-hu-Gwd" appends="YES" id="EDI-RO-571"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -346,6 +350,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1w-At-OlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EQd-hu-Gwd">
+                    <connections>
+                        <action selector="tapCerrarTeclado:" destination="Fea-ay-fRG" id="zeg-FR-GAJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="502.5" y="767.95774647887322"/>
         </scene>
@@ -391,8 +400,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Olvide Password" id="npd-gH-qPr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="mNM-kx-ZtQ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="mNM-kx-ZtQ">
+                            <connections>
+                                <action selector="clickBtnBuscar:" destination="vxP-sN-th6" id="jGC-DZ-yc2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txtEmail" destination="N33-su-tWk" id="TUd-Qz-bNy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7e4-Pp-VNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -401,7 +417,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hfl-KC-Tqr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Caq-8R-1Y3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RDPLogInNavViewController" automaticallyAdjustsScrollViewInsets="NO" id="Caq-8R-1Y3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRw-az-nmf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

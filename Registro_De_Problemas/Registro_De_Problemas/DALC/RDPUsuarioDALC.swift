@@ -13,22 +13,47 @@ class RDPUsuarioDALC: NSObject {
     
     
     
-    class func validarUsuario(_ objUsuario : RDPUsuarioBE) -> Bool{
+    class func existeUsuario(_ objUsuario : RDPUsuarioBE, conContext contexto : NSManagedObjectContext, procesoCorrecto correcto : @escaping DIClosures.Correct, procesoIncorrecto incorrecto : @escaping DIClosures.MensajeError){
         
-        let arrayUsuario = [Usuario]()
+        let fetchRequest : NSFetchRequest<Usuario> = Usuario.fetchRequest()
         
-        for user in arrayUsuario {
+        do{
+            let predicado = NSPredicate(format: "usuario_email == %@ AND usuario_password == %@", objUsuario.usuario_email!, objUsuario.usuario_password!)
+            fetchRequest.predicate = predicado
             
-            if( user.usuario_name == objUsuario.usuario_name
-                && user.usuario_password == objUsuario.usuario_password){
-                return true
+            let arrayResultado = try contexto.fetch(fetchRequest)
+            
+            if arrayResultado.count == 0 {
+                incorrecto("Usuario o contraseña incorrectos")
+            }else{
+                correcto(arrayResultado[0])
             }
             
+        }catch{
+            incorrecto("Se produjo un error en la base de datos")
         }
         
-        return false
+    }
+    
+    class func obtenerUsuarioPorCorreo(_ correo : String, conContext contexto : NSManagedObjectContext) -> Usuario?{
+        
+        let fetchRequest : NSFetchRequest<Usuario> = Usuario.fetchRequest()
+        
+        do{
+            let predicado = NSPredicate(format: "usuario_email == %@", correo)
+            fetchRequest.predicate = predicado
+            
+            let arrayResultado = try contexto.fetch(fetchRequest)
+            
+            return arrayResultado.count == 0 ? nil : arrayResultado[0]
+            
+        }catch{
+            return nil
+        }
         
     }
+    
+    
     
     @discardableResult class func agregar(_ objUsuario : RDPUsuarioBE, conContext contexto : NSManagedObjectContext) -> Usuario {
         
