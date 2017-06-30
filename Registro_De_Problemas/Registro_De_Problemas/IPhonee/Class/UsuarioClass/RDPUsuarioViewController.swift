@@ -8,20 +8,58 @@
 
 import UIKit
 
-class RDPUsuarioViewController: UIViewController {
+class RDPUsuarioViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
-    @IBOutlet weak var lblTest: UILabel!
+    
+    @IBOutlet weak var srchFilter: UISearchBar!
+    @IBOutlet weak var tlbTicket: UITableView!
+    
+    var arrayUserTickets = [Ticket]()
+    var arrayUserTicketsFiltered = [Ticket]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.lblTest.text = RDPUsuarioBC.sharedInstance.objSesionUsuario?.usuario_email
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - TableView
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayUserTicketsFiltered.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cellIdentifier = "RDPUserTicketTableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RDPUserTicketTableViewCell
+        
+        cell.objTicket = self.arrayUserTicketsFiltered[indexPath.row]
+        cell.actualizarData()
+        
+        return cell
+    }
+    
+    // MARK: - SearchBar
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchText.characters.count == 0{
+            self.arrayUserTicketsFiltered = self.arrayUserTickets
+        }else{
+            let arrayResultado = self.arrayUserTickets.filter{$0.title!.contains(searchText)}
+            self.arrayUserTicketsFiltered = arrayResultado
+        }
+        
     }
     
 

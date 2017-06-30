@@ -7,21 +7,50 @@
 //
 
 import UIKit
+import CoreData
 
-class RDPDesarrolladorViewController: UIViewController {
+class RDPDesarrolladorViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var lblTest: UILabel!
+    @IBOutlet weak var tblTickets: UITableView!
+    
+    var arrayTickets = [Ticket]()
+    var arrayTicketsFiltered = [Ticket]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.lblTest.text = RDPUsuarioBC.sharedInstance.objSesionUsuario?.usuario_email
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // Mark: - TableView
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayTicketsFiltered.count
+    }
+    
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cellIdentifier = "RDPTicketTableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RDPTicketTableViewCell
+        
+        cell.objTicket = arrayTicketsFiltered[indexPath.row]
+        
+        cell.actualizarData()
+        return cell
+    }
+
+    
+    
+    // Mark: - SearchBar
     
 
     /*
