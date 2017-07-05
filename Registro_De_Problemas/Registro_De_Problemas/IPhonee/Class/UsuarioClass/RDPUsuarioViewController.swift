@@ -22,6 +22,14 @@ class RDPUsuarioViewController: UIViewController, UITableViewDelegate, UITableVi
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.arrayUserTickets = RDPTicketBC.listarTicketsPorUsuario(RDPUsuarioBC.sharedInstance.objSesionUsuario!.usuario_name!)
+        self.arrayUserTicketsFiltered = self.arrayUserTickets
+        self.tlbTicket.reloadData()
+        
+        super.viewWillAppear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,6 +57,10 @@ class RDPUsuarioViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "RDPDetalleViewController", sender: self.arrayUserTicketsFiltered[indexPath.row])
+    }
+    
     // MARK: - SearchBar
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -62,15 +74,26 @@ class RDPUsuarioViewController: UIViewController, UITableViewDelegate, UITableVi
         
     }
     
+    // MARK: - LogOut
+    
+    
+    @IBAction func clickBtnLogOut(_ sender: Any) {
+        RDPUsuarioBC.eliminarSesionUsuario()
+        self.navigationController?.dismiss(animated: true, completion: nil)
+        
+    }
+    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "RDPDetalleViewController"{
+            let controller = segue.destination as! RDPDetalleViewController
+            controller.objTicket = sender as! Ticket
+        }
     }
-    */
+    
 
 }

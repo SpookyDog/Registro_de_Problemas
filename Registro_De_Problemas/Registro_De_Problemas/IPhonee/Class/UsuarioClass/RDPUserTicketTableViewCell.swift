@@ -11,8 +11,12 @@ import UIKit
 class RDPUserTicketTableViewCell: UITableViewCell {
     
     var objTicket : Ticket!
+    
+    @IBOutlet weak var lblTitle: UILabel!
 
     func actualizarData(){
+        
+        self.lblTitle.text = "\(self.objTicket.nombre_Usuario!) -- \(self.objTicket.title!)"
         
     }
     

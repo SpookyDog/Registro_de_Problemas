@@ -17,7 +17,7 @@ class RDPTicketTableViewCell: UITableViewCell {
     
     func actualizarData(){
         
-        self.lblTitulo.text = "\(self.objTicket.nombre_Usuario) -- \(self.objTicket.title)"
+        self.lblTitulo.text = "\(self.objTicket.nombre_Usuario!) -- \(self.objTicket.title!)"
         
     }
     

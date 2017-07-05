@@ -11,7 +11,7 @@ import CoreData
 
 class RDPTicketBC: NSObject {
     
-    typealias Agregar = (_ objRazaPerro : Ticket) -> Void
+    typealias Agregar = (_ objTicket : Ticket) -> Void
     typealias MensajeError = (_ mensaje : String) -> Void
     
     class func listarTicketsConContext() -> [Ticket]{

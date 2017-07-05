@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Commentario" representedClassName="Commentario" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Comentario" representedClassName="Comentario" syncable="YES" codeGenerationType="class">
         <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre_Usuario" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="ticket" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ticket" inverseName="comments" inverseEntity="Ticket" syncable="YES"/>
     </entity>
@@ -11,7 +11,7 @@
         <attribute name="estado" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombre_Usuario" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Commentario" inverseName="ticket" inverseEntity="Commentario" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comentario" inverseName="ticket" inverseEntity="Comentario" syncable="YES"/>
     </entity>
     <entity name="Usuario" representedClassName="Usuario" syncable="YES" codeGenerationType="class">
         <attribute name="usuario_email" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,8 +21,8 @@
         <attribute name="usuario_tipo" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-641" positionY="-75" width="128" height="120"/>
+        <element name="Comentario" positionX="-360" positionY="-99" width="128" height="105"/>
         <element name="Ticket" positionX="-128" positionY="-234" width="128" height="118"/>
-        <element name="Commentario" positionX="-360" positionY="-99" width="128" height="103"/>
+        <element name="Usuario" positionX="-641" positionY="-75" width="128" height="120"/>
     </elements>
 </model>
